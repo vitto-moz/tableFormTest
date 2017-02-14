@@ -85,3 +85,9 @@
 .control-label{
 	@extend .label;
 }
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    display: block;
+}
