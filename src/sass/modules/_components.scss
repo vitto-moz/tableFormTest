@@ -1,0 +1,55 @@
+.borders {
+	border-bottom-color: $subLinesColor;
+	border-left-color: $subLinesColor;
+	border-right-color: $subLinesColor;
+	border-top-color: $subLinesColor;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-image-outset: 0 0 0 0;
+	border-image-repeat: stretch stretch;
+	border-image-slice: 100% 100% 100% 100%;
+	border-image-source: none;
+	border-image-width: 1 1 1 1;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+	color: #555;
+	transition-delay: 0s, 0s;
+	transition-duration: 0.15s, 0.15s;
+	transition-property: border-color, box-shadow;
+	transition-timing-function: ease-in-out, ease-in-out;
+}
+
+.full-width-line{
+	background-color: $mainColor;
+	background-repeat: repeat-x;
+	min-height: 40px;
+	font-size: $menu-font-size;
+	background-image: linear-gradient(to bottom, #ffffff, $subLinesColor);
+	width: 100%;
+}
+
+.adaptive-width{
+	width: 100% !important; 
+}
+
+.label{
+	color: #5b2a86;
+	font-size: $sub-menu-font-size;
+}
+
+.add-padding{
+	padding: 5%;
+}
+
+.spacing-top{
+	margin-top: 10px;
+}
+
+.padding-bottom{
+	padding-bottom: 15px;
+}

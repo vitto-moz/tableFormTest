@@ -1,0 +1,47 @@
+/* font-family: "PTSansNarrowRegular"; */
+/* @font-face {
+    font-family: "PTSansNarrowBold";
+    src: url("PTSansNarrowBold.eot");
+    src: url("PTSansNarrowBold.eot?#iefix")format("embedded-opentype"),
+    url("PTSansNarrowBold.woff") format("woff"),
+    url("PTSansNarrowBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+	font-family: 'arkhip';
+    src: url("arkhip.ttf");
+} */
+
+/* @font-face {
+	font-family: 'arkhip';
+	src: url("arkhip.ttf"); 
+	     url("arkhip.ttf")  format('truetype'); 
+	}
+ */
+
+// Font weights
+$light: 100;
+$regular: 400;
+$bold: 600;
+
+// Base Font
+$base-font-family: 'PTSansNarrowBold';
+$base-font-weight: $regular;
+$base-font-size: 15px;
+$big-font-size: 20px;
+$sub-menu-font-size: 17px;
+$menu-font-size: 17px;
+$base-line-height: 1.4;
+
+// Fixed Font
+$fixed-font-family: monospace;
+$fixed-font-size: 85%;
+$fixed-line-height: $base-line-height;
+
+// Headings
+$header-font-weight: $bold;
+
+@import "../modules/all";
+

@@ -1,0 +1,35 @@
+<form class="popup-body">
+	<div class="form-group">
+		<label for="text">Login:</label>
+		<input 
+			type="text" 
+			class="form-control" 
+			name="username" 
+			id="username"
+			ng-model="$ctrl.userName"
+			>
+	</div>
+	<div class="form-group">
+		<label for="pwd">Password:</label>
+		<input 
+			type="password" 
+			class="form-control" 
+			name="password" 
+			id="password"
+			ng-model="$ctrl.userPass"	
+			>
+	</div>
+	<button 
+		type="submit" 
+		class="btn btn-default" 
+		value="Login" 
+		id="submit" 
+		ng-click="$ctrl.validate(); 
+				  $event.preventDefault();"
+
+	>
+	Submit
+	</button>
+	<div class="msg-block">{{$ctrl.mistakeMsg}}</div>
+
+</form>
