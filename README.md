@@ -1,7 +1,8 @@
 # tableFormTest
 
 There is test application - created with AngularJS (UI-Router, Gulp, Sass)
-use next login and pass to get into:
+
+Use next login and pass to get into:
 
 login: user1; password: 1;
 
