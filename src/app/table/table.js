@@ -1,4 +1,4 @@
-import onlyUnique from '../uniqueArray';
+import onlyUnique from '../utility/uniqueArray';
 
 function TableController($http, $log) {
   const ctrl = this;
