@@ -33,6 +33,6 @@ gulptnst.start.applylgulplnst. toRun);
 ^
 TypeError: Cannot read property 'apply' of undefined
 
-run command: "npm install -g gulp-cli"...then try again p.4
+run command: "npm install -g gulp-cli"...then try again
 
 
