@@ -19,9 +19,12 @@ app.get(' ', function (req, res) {
 
 app.post('/addEmployee', function(req, res) {
     console.info("req.body ", req.body);
-    tableData.push(req.body);
-    console.info("tableData ", tableData);
-    res.end('It worked!');
+    console.info("tableData before", tableData);
+    if (req.body.firstName !== "") {
+      tableData.push(req.body);
+      console.info("tableData after", tableData);
+      res.end('It worked!');
+    }
     // res.end(JSON.stringify(response));
 
 });

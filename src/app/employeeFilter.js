@@ -13,7 +13,8 @@ export const employeeFilter = ($timeout) => {
       angular.forEach(arr, function(item){
         var fullInfo =  item.position; 
         console.log("item.position ", item.position);
-        if(fullInfo.toLowerCase().indexOf(searchString) !== -1){
+        // if(fullInfo.toLowerCase().indexOf(searchString) !== -1){
+        if(fullInfo.toLowerCase() == searchString){
           result.push(item);
         }
       });

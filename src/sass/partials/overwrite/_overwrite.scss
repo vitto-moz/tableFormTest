@@ -82,12 +82,16 @@
 	border-top-right-radius: 0px;
 }
 
-.control-label{
+/* .control-label{
 	@extend .label;
 }
-
+ */
 table {
     border-spacing: 0;
     border-collapse: collapse;
     display: block;
+}
+
+.checkbox:hover {
+	cursor: pointer;
 }

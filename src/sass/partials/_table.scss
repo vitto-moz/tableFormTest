@@ -1,0 +1,86 @@
+.table-block {
+	box-sizing: border-box;
+}
+
+.table-item {
+	margin: 0px 0px 15px 10px;
+	display: inline-block;
+	width: 245px;
+}
+
+.table-item-btn {
+	margin: 0px 0px 15px 10px;
+	display: inline-block;
+}
+
+.container-table {
+	margin: 2%;
+	min-height: 80%;
+	
+}
+
+.table-filter {
+	margin: 0px 0px 15px 10px;;
+	display: inline-block;
+	width: 230px;
+	position: relative;
+	color: #9999A1;
+}
+
+.right-block {
+	left: 257px;
+	position: relative;
+	width: 66px;
+}
+
+.left-block {
+	left: 0px;
+	position: relative;
+}
+
+.delete-block {
+	padding: 0px 0px 0px 103px;
+}
+
+.block {
+	width: 200px;
+	display: block;
+}
+
+.icon-block {
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	margin: 6px 28px 8px 7px;
+	position: relative;
+	top: -3px;
+}
+
+.icon-block:hover {
+	cursor: pointer;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+tbody > tr {
+	border: 1px solid #dddddd;
+	padding: 8px;
+	text-align: center;
+}
+
+tbody > td {
+	border: 1px solid #dddddd;
+	padding: 8px;
+}
+
+th {
+	text-align: center;
+}
+
+.table-item-message {
+	margin: 0px 0px 15px 10px;
+	display: inline-block;
+	width: 100%;
+}
