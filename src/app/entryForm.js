@@ -1,17 +1,17 @@
-function EntryFormController($document, $log, $http, $window) {
+function EntryFormController($document, $log, $http, $state) {
   const ctrl = this;
   let usersInfo = [];
   ctrl.mistakeMsg = "";
 
+  // method for comparing inputs with registered data from server
   ctrl.validate = function () {
     $http({
       method: 'GET',
       url: 'http://localhost:3001/get3'})
       .then(response => {
-        $log.log("success ", response.data);
         return response;
       }, response => {
-        $log.log("failed ", response.data);
+        $log.log("failed server connection", response.data);
         return response;
       })
       .then(previousResult => {
@@ -20,7 +20,7 @@ function EntryFormController($document, $log, $http, $window) {
         let showMessage = true;
         for (let i = usersInfo.length - 1; i >= 0; i--) {
           if (ctrl.userName === usersInfo[i].name && ctrl.userPass === usersInfo[i].password) {
-            $window.location.href = '/table';
+            $state.go('table');
             showMessage = false;
             ctrl.mistakeMsg = "";
           }

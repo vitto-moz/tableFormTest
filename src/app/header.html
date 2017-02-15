@@ -1,5 +1,5 @@
-<header class="header">
-	<p class="header-title header-exit" ui-sref="app">
+<header class="header header-custom" ng-init="$ctrl.load()">
+	<p class="header-title header-exit" ui-sref="app" ng-show="$ctrl.hideExit" ng-model="$ctrl.hideExit">
 		<span class="glyphicon glyphicon-menu-left"></span>
 		Exit
 	</p>
