@@ -27,7 +27,7 @@ run next sequence of commands in git bash:
 
 ( by default http://localhost:3000)
 
-if error below occure (during "gulp serve" run - p.5):
+if error below occure (during "gulp serve" run):
 
 gulptnst.start.applylgulplnst. toRun);
 ^
