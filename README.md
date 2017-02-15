@@ -20,7 +20,7 @@ run next sequence of commands in git bash:
 
 
 !!!next commands should be run from another instance of console!!!
-(from root dir)
+(in root dir)
 
 6. "gulp serve"
 7. go to localhost mentioned in command line (bash) through your browser
