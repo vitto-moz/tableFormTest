@@ -16,7 +16,7 @@ run next sequence of commands in git bash:
 !!!next commands should be run from another instance of console!!!
 
 5. "cd src" (from root dir)
-6. "node sever.js"
+6. "node server.js"
 7. go to localhost mentioned in command line (bash) through your browser
 ( by default http://localhost:3000)
 
