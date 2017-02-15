@@ -1,9 +1,8 @@
 import angular from 'angular';
 
-// import {techsModule} from './app/techs/index';
 import 'angular-ui-router';
 import routesConfig from './routes';
-import './utility/сhecklist-model';
+import './app/utility/сhecklist-model';
 import {employeeFilter} from './app/filters/employeeFilter';
 
 import {main} from './app/main/main';

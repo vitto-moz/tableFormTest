@@ -40,7 +40,7 @@
 			<!-- button for clear filter -->
 			<td>
 				<button ng-click="searchString = ''" class="btn btn-default table-item-btn btn-primary">
-					Сlear filter
+					Сlear Filter
 				</button>
 			<!-- block with buttons for deleting -->
 			<td colspan="2">
@@ -55,9 +55,18 @@
 			</td>
 		</tr>
 		<tr class="table-block">
-			<th ng-click="$ctrl.sortTable('firstName')">First Name</th>
-			<th ng-click="$ctrl.sortTable('secondName')">Second Name</th>
-			<th ng-click="$ctrl.sortTable('position')">Position</th>
+			<th ng-click="$ctrl.sortTable('firstName')" class="sort-block">
+				First Name
+				<span class="glyphicon glyphicon-sort-by-alphabet" >
+			</th>
+			<th ng-click="$ctrl.sortTable('secondName')" class="sort-block">
+				Second Name
+				<span class="glyphicon glyphicon-sort-by-alphabet">
+			</th>
+			<th ng-click="$ctrl.sortTable('position')" class="sort-block">
+				Position
+				<span class="glyphicon glyphicon-sort-by-alphabet">
+			</th>
 			<th>Edit | Check</th>
 		</tr>
 	</thead>

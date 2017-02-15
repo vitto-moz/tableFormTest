@@ -16,7 +16,7 @@
 .container-table {
 	margin: 2%;
 	min-height: 80%;
-	
+
 }
 
 .table-filter {
@@ -57,6 +57,10 @@
 }
 
 .icon-block:hover {
+	cursor: pointer;
+}
+
+.sort-block:hover {
 	cursor: pointer;
 }
 

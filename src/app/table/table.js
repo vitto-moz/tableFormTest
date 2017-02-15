@@ -5,7 +5,6 @@ function TableController($http, $log) {
 
   // sort method - works when table headers is clicked
   ctrl.sortTable = order => {
-    $log.log("sortTable order", order);
     ctrl.order = order;
   };
 
@@ -39,7 +38,6 @@ function TableController($http, $log) {
 
   // method for adding employee
   ctrl.addEmployee = () => {
-    $log.log("post");
     // get input values
     const employeeInfo = {
       firstName: ctrl.firstNameInput,
@@ -49,7 +47,6 @@ function TableController($http, $log) {
     // send post request for adding employee on backend side
     $http.post("http://localhost:3001/addEmployee", employeeInfo)
      .then(() => {
-       $log.log("yes");
        // get table content with added employee
        ctrl.getTableInfo();
        // clear input after adding
