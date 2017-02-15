@@ -2,10 +2,8 @@ var express = require('express');
 var app = express();
 var cors = require('cors');
 
-// parse urlencoded request bodies into req.body
-var bodyParser = require('body-parser');
+var bodyParser = require('body-parser'); // parse urlencoded request bodies into req.body
 app.use( bodyParser.json() );       // to support JSON-encoded bodies
-// app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
   extended: true
 })); 
@@ -17,20 +15,17 @@ app.get(' ', function (req, res) {
    res.sendFile( __dirname + "/" + "index.htm" );
 })
 
+// method for adding employee
 app.post('/addEmployee', function(req, res) {
-    console.info("req.body ", req.body);
-    console.info("tableData before", tableData);
     if (req.body.firstName !== "") {
       tableData.push(req.body);
-      console.info("tableData after", tableData);
       res.end('It worked!');
     }
-    // res.end(JSON.stringify(response));
 
 });
 
+// method for deleting checked employees
 app.post('/deleteChecked', function(req, res) {
-    console.info("req.body deleteChecked", req.body);
     for (var i = req.body.length - 1; i >= 0; i--) {
           tableData.splice(req.body[i], 1, "");
     }
@@ -41,23 +36,24 @@ app.post('/deleteChecked', function(req, res) {
           }
     }
 
-    res.end('It worked!');
-    // res.end(JSON.stringify(response));
-
+    res.end('Checked employees deleted!');
 });
 
+// method for deleting all employees
 app.post('/clearTable', function(req, res) {
     tableData = [];
     res.end('It worked!');
 });
 
+// fill table with emolyee - current state
 app.get('/table', function (req, res) {
    // Prepare output in JSON format
    response = tableData;
    res.end(JSON.stringify(response));
 })
 
-app.get('/get3', function (req, res) {
+// method - response users info object 
+app.get('/getUsers', function (req, res) {
    // Prepare output in JSON format
    response = {users: [
          {
@@ -75,7 +71,7 @@ app.get('/get3', function (req, res) {
 })
 
 
-
+// initial table state (employees)
 var tableData = [
          {
             "firstName": "John",
@@ -94,13 +90,7 @@ var tableData = [
          },
       ] 
 
-/*app.get('/get3', function (req, res) {
-   // Prepare output in JSON format
-   res.set('Content-Type', 'text/plain');
-   response = "some text 3";
-   res.end(JSON.stringify(response));
-})
-*/
+// server config
 var server = app.listen(3001, 'localhost', function () {
    var host = server.address().address;
    var port = server.address().port;

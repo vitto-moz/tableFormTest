@@ -7,7 +7,7 @@ function EntryFormController($document, $log, $http, $state) {
   ctrl.validate = function () {
     $http({
       method: 'GET',
-      url: 'http://localhost:3001/get3'})
+      url: 'http://localhost:3001/getUsers'})
       .then(response => {
         return response;
       }, response => {
