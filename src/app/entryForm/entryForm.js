@@ -1,3 +1,4 @@
+/* eslint-disable */
 function EntryFormController($document, $log, $http, $state) {
   const ctrl = this;
   let usersInfo = [];

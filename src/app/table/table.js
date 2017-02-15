@@ -1,3 +1,4 @@
+/* eslint-disable */
 import onlyUnique from '../utility/uniqueArray';
 
 function TableController($http, $log) {
